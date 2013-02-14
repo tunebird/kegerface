@@ -18,7 +18,8 @@
 
 			
 			// set URL/Paths for csv and recipe pages
-			$beersurl = "beers.csv";
+			include 'beerlink.php';
+			//$beersurl = "beers.csv";
 			$tap1fB = "";
 			$tap2fB = "";
 			$tap3fB = "";
