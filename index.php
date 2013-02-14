@@ -14,6 +14,7 @@
 			$srm = array();
 			$status = array();
 			$beernamel = array();
+			$numBeers = 3;
 
 			
 			// set URL/Paths for csv and recipe pages
@@ -97,6 +98,7 @@
 		</div>
 		
 		<!-- Tap 2 -->
+		<?php if($numBeers >= 2) { ?>
 		<div id="content-row2">
 			<div id="content-row2g">
 			</div>		
@@ -118,8 +120,10 @@
 				</div>
 			</div>
 		</div>
+		<?php } ?>
 		
 		<!-- Tap 3 -->		
+		<?php if($numBeers >= 3) { ?>
 		<div id="content-rowe">
 			<div id="BeerPic">
 				<img src="images/SRM <?php echo $srm['Beer3']; ?>.png" height="150">
@@ -137,8 +141,10 @@
 				<img src="images/kegs/<?php echo $status['Beer3']; ?>.png" width="80">
 			</div>
 		</div>
+		<?php } ?>
 
 		<!-- Tap 4 -->
+		<?php if($numBeers >= 4) { ?>
 		<div id="content-row2">
 			<div id="content-row2g">
 			</div>		
@@ -160,8 +166,10 @@
 				</div>
 			</div>
 		</div>
+		<?php } ?>
 
 		<!-- Tap 5 -->
+		<?php if($numBeers >= 5) { ?>
 		<div id="content-rowe">
 			<div id="BeerPic">
 				<img src="images/SRM <?php echo $srm['Beer5']; ?>.png" height="150">
@@ -179,8 +187,10 @@
 				<img src="images/kegs/<?php echo $status['Beer5']; ?>.png" width="80">
 			</div>
 		</div>
+		<?php } ?>
 
 		<!-- Tap 6 -->
+		<?php if($numBeers >= 6) { ?>
 		<div id="content-row2">
 			<div id="content-row2g">
 			</div>		
@@ -202,6 +212,7 @@
 				</div>
 			</div>
 		</div>		
+		<?php } ?>
 
 		<div id="footer">
 			Kegerface 2.13.13v
